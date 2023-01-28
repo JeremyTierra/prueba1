@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hola que hace</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon"
+    href="https://www.ucacue.edu.ec/wp-content/uploads/2020/09/ucacue-logo-centro-mediacion.png">
+
+</head>
+
+<body>
+
+  <div class="contenedorPrincipal">
+
+    <h1>Proyecto Calculo diferencial</h1>
+
+    <div class="divDibujo">
+      <div class="divDatos">Velocidad instantanea = </div>
+      <div class="objeto" src="carro.png">
+      </div>
+      <canvas class="canvas" width="1250px" height="350px" style="border:1px solid #d3d3d3;"></canvas>
+
+    </div>
+    <div class="contenedorBotones">
+      <button class="botonContinuar">Avanzar</button>
+      <button class="botonParar">Parar</button>
+
+      <button class="botonReversa">Reversa</button>
+      <button class="botonIniciar">Reiniciar</button>
+    </div>
+
+    <h2 class="tituloPista">Pistas de carrera</h2>
+    <div class="contenedorPistas">
+
+
+      <button class="pista1"></button>
+      <button class="pista2"></button>
+      <button class="pista3"></button>
+
+    </div>
+
+    <h2 class="tituloPista">Aceleracion</h2>
+
+    <div class="contenedorAceleracion">
+
+      <div class="contenedorImagenAceleracion"><img class="imagenAceleracion" src="./imagenes/graficaVelocidad.png" ></div>
+      <div class="datosAceleracion"> <h3>Datos de Aceleracion </h3>
+      <p>Puntos de referencia de la aceleracion actual (.48,.22,.14,.68)</p>
+    
+    <p>Para cambiar la aceleracion puede ingresar nuevos puntos de referencia aqui con este formato (.48,.22,.14,.68) , siendo los dos primeros las coordenadas del primer punto de refencia de la curva y los siguientes las cordenadas del segundo punto. 
+      <br><br>
+      <b>NOTA : las coordenadas tanto en x como en y no pueden sobrepasar el valor de 1</b></p>
+    
+    <form class="formAceleracion"> 
+      <input type="text" class="entradaAceleracion" placeholder="(.48,.22,.14,.68)">
+      <button type="submit" class="botonEnvioAceleracion">Cambiar aceleracion</button>
+    </form>
+    </div>
+    </div>
+    <h2  class="tiempoTitulo">Tiempo para cruzar toda la carretera en segundos <form class="formTiempoPista"> 
+      <input type="text" class="entradaTiempo" placeholder="3" > <button type="submit" class="cambiarSegundos">Cambiar</button>
+    </form>
+    </h2>
+  </div>
+
+  <script src="./javascript.js"></script>
+</body>
+
+</html>
